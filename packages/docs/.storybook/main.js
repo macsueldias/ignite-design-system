@@ -1,12 +1,13 @@
 module.exports = {
   "stories": [
-    "../src/stories/**/.stories.mdx",
-    "../src/stories/**/.stories.tsx"
+    "../src/pages/**/*.stories.mdx",
+    "../src/stories/**/*.stories.tsx"
   ],
   "addons": [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "@storybook/addon-interactions"
+    "@storybook/addon-interactions",
+    "@storybook/addon-a11y"
   ],
   "framework": "@storybook/react",
   "core": {
@@ -14,5 +15,6 @@ module.exports = {
   },
   "features": {
     "storyStoreV7": true
-  }
+  },
+  
 }
