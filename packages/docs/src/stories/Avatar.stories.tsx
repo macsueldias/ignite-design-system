@@ -9,6 +9,13 @@ export default {
     src: 'https://github.com/macsueldias.png',
     alt: 'Macsuel Dias',
   },
+  argTypes: {
+    src: {
+      control: {
+        type: 'text',
+      },
+    },
+  },
 } as Meta<AvatarProps>
 
 export const Primary: StoryObj<AvatarProps> = {}

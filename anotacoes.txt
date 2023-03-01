@@ -19,3 +19,6 @@ npm i react react-dom
 npm i polished
 
 npm i turbo@latest -D
+
+npm install @storybook/addon-a11y
+
