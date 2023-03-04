@@ -22,3 +22,6 @@ npm i turbo@latest -D
 
 npm install @storybook/addon-a11y
 
+npm i @changesets/cli -D
+
+npx changeset init
