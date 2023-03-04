@@ -9,7 +9,7 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 
+      - name: Checkout
         uses: actions/checkout@v3
 
       - name: Setup Node.js
@@ -19,16 +19,15 @@ jobs:
           cache: 'npm'
           cache-dependency-path: '**/package-lock.json'
 
-    - run: npm ci
+      - run: npm ci
 
-    - run: npm run build
-      env: 
-        TURBO_TOKEN: LIFmaHVWMl84N5dHeLLPFOxJ
-        TURBO_TEAM: i9team
+      - run: npm run build
+        env:
+          TURBO_TOKEN: LIFmaHVWMl84N5dHeLLPFOxJ
+          TURBO_TEAM: i9team
 
-
-    - name: Deploy storybook
-      working-directory: ./packages/docs
-      run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
-      env:
-        GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
+      - name: Deploy storybook
+        working-directory: ./packages/docs
+        run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
+        env:
+          GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
