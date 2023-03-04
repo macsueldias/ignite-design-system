@@ -86,8 +86,7 @@ var colors = {
   ignite300: "#00B37E",
   ignite500: "#00875F",
   ignite700: "#015F43",
-  ignite900: "#00291D",
-  test: "#890a3d"
+  ignite900: "#00291D"
 };
 var space = {
   1: "0.25rem",
