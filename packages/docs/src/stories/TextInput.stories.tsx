@@ -36,5 +36,6 @@ export const Disabled: StoryObj<TextInputProps> = {
 export const WhithPrefix: StoryObj<TextInputProps> = {
   args: {
     prefix: 'Name:',
+    placeholder: 'your-username',
   },
 }
