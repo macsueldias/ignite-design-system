@@ -1,5 +1,5 @@
 {
-  "name": "@interfacex-ui/react",
+  "name": "@i9-design-ui/react",
   "version": "1.0.0",
   "description": "",
   "main": "./dist/index.js",
@@ -14,9 +14,9 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@interfacex-ui/eslint-config": "*",
-    "@interfacex-ui/tokens": "*",
-    "@interfacex-ui/ts-config": "*",
+    "@i9-design-ui/eslint-config": "*",
+    "@i9-design-ui/tokens": "*",
+    "@i9-design-ui/ts-config": "*",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.10",
     "react": "^18.2.0",

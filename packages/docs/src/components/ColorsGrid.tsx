@@ -1,4 +1,4 @@
-import { colors } from '@interfacex-ui/tokens'
+import { colors } from '@i9-design-ui/tokens'
 import { getContrast } from 'polished'
 
 export function ColorsGrid() {

@@ -1,3 +1,3 @@
 {
-    "extends": "@interfacex-ui/eslint-config"
+    "extends": "@i9-design-ui/eslint-config"
 }

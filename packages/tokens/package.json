@@ -1,7 +1,7 @@
 {
-  "name": "@interfacex-ui/tokens",
+  "name": "@i9-design-ui/tokens",
   "version": "1.0.0",
-  "description": "interfacex-ui/tokens",
+  "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -14,8 +14,8 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@interfacex-ui/ts-config": "*",
-    "@interfacex-ui/eslint-config": "*",
+    "@i9-design-ui/ts-config": "*",
+    "@i9-design-ui/eslint-config": "*",
     "tsup": "^6.6.0",
     "typescript": "^4.9.5"
   }

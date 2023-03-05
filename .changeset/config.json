@@ -7,5 +7,5 @@
   "access": "public",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
-  "ignore": ["@interfacex-ui/docs"]
+  "ignore": ["@i9-design-ui/docs"]
 }

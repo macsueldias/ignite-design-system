@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { Box, Text, TextArea, TextAreaProps } from '@interfacex-ui/react'
+import { Box, Text, TextArea, TextAreaProps } from '@i9-design-ui/react'
 
 export default {
   title: 'Form/Text Area',
