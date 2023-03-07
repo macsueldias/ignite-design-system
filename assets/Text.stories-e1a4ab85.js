@@ -1,0 +1,2 @@
+import{T as t}from"./index-b701ec31.js";import"./index-ce50f055.js";import"./iframe-d2ee11c4.js";import"./index-ee482b8e.js";import"./jsx-runtime-209a7c54.js";const m={title:"Typography/Text",component:t,args:{size:"md",children:"Lorem ipsum dolor sit amet consectetur"},argTypes:{size:{options:["sm","md","lg","2xl","4xl","5xl","6xl"],control:{type:"inline-radio"}}}},n={},a={args:{children:"Strong Text",as:"strong"}},p=["Primary","CustomTag"];export{a as CustomTag,n as Primary,p as __namedExportsOrder,m as default};
+//# sourceMappingURL=Text.stories-e1a4ab85.js.map
