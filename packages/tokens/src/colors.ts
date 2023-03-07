@@ -16,6 +16,6 @@ export const colors = {
   ignite700: '#015F43',
   ignite900: '#00291D',
 
-  i9gray: '#111827',
+  i9gray: '#111826',
   i9purple: '#581c87',
 }
