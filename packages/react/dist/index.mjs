@@ -610,7 +610,7 @@ var ToastViewport = styled(Toast.Viewport, {
 // src/components/Toast/index.tsx
 import { X } from "phosphor-react";
 import { jsx as jsx5, jsxs as jsxs4 } from "react/jsx-runtime";
-var Component = ({
+var Toast2 = ({
   title,
   description,
   duration,
@@ -635,8 +635,7 @@ var Component = ({
     /* @__PURE__ */ jsx5(ToastViewport, {})
   ] });
 };
-Component.displayName = "Toast";
-var Toast2 = Component;
+Toast2.displayName = "Toast";
 
 // src/components/Tooltip/styles.ts
 import * as Tooltip from "@radix-ui/react-tooltip";

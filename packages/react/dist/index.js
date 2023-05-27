@@ -661,7 +661,7 @@ var ToastViewport = styled(Toast.Viewport, {
 // src/components/Toast/index.tsx
 var import_phosphor_react3 = require("phosphor-react");
 var import_jsx_runtime5 = require("react/jsx-runtime");
-var Component = ({
+var Toast2 = ({
   title,
   description,
   duration,
@@ -686,8 +686,7 @@ var Component = ({
     /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(ToastViewport, {})
   ] });
 };
-Component.displayName = "Toast";
-var Toast2 = Component;
+Toast2.displayName = "Toast";
 
 // src/components/Tooltip/styles.ts
 var Tooltip = __toESM(require("@radix-ui/react-tooltip"));
