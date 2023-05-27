@@ -5,7 +5,6 @@ import { Button, Toast, ToastProps, ToastRef } from '@i9-design-ui/react'
 export default {
   title: 'Form/Toast',
   component: Toast,
-  args: { text: 'Macsuel', children: 'Tooltip' },
   argTypes: {
     duration: {
       type: 'number',

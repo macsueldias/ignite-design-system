@@ -661,7 +661,7 @@ var ToastViewport = styled(Toast.Viewport, {
 // src/components/Toast/index.tsx
 var import_phosphor_react3 = require("phosphor-react");
 var import_jsx_runtime5 = require("react/jsx-runtime");
-var Component = ({ title, description, duration, position }, ref) => {
+var Component = ({ title, description, duration, position, children }, ref) => {
   const [open, setOpen] = (0, import_react3.useState)(false);
   const timerRef = (0, import_react3.useRef)(0);
   const handleClick = () => {
@@ -670,9 +670,9 @@ var Component = ({ title, description, duration, position }, ref) => {
       setOpen(true);
     }, 100);
   };
-  console.log(position);
   (0, import_react3.useImperativeHandle)(ref, () => ({ open: handleClick }), []);
   return /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)(ToastProvider, { duration, swipeDirection: position, children: [
+    children,
     /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)(ToastRoot, { open, onOpenChange: setOpen, children: [
       /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(ToastTitle, { children: title }),
       /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(ToastDescription, { children: description }),

@@ -1,4 +1,4 @@
-import {
+import React, {
   useRef,
   ForwardRefRenderFunction,
   forwardRef,
@@ -20,6 +20,7 @@ export interface ToastProps {
   description: string
   duration?: number
   position?: 'up' | 'down' | 'left' | 'right'
+  children: React.ReactNode
 }
 
 export interface ToastRef {
@@ -27,7 +28,7 @@ export interface ToastRef {
 }
 
 const Component: ForwardRefRenderFunction<ToastRef, ToastProps> = (
-  { title, description, duration, position }: ToastProps,
+  { title, description, duration, position, children }: ToastProps,
   ref: any,
 ) => {
   const [open, setOpen] = useState(false)
@@ -41,12 +42,11 @@ const Component: ForwardRefRenderFunction<ToastRef, ToastProps> = (
     }, 100)
   }
 
-  console.log(position)
-
   useImperativeHandle(ref, () => ({ open: handleClick }), [])
 
   return (
     <ToastProvider duration={duration} swipeDirection={position}>
+      {children}
       <ToastRoot open={open} onOpenChange={setOpen}>
         <ToastTitle>{title}</ToastTitle>
         <ToastDescription>{description}</ToastDescription>
