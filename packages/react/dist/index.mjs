@@ -525,7 +525,7 @@ function MultiStep({ size, currentStep = 1 }) {
 MultiStep.displayName = "MultiStep";
 
 // src/components/Toast/index.tsx
-import { useRef, forwardRef as forwardRef2, useState } from "react";
+import { useRef, useState } from "react";
 
 // src/components/Toast/styles.ts
 import * as Toast from "@radix-ui/react-toast";
@@ -636,7 +636,7 @@ var Component = ({
   ] });
 };
 Component.displayName = "Toast";
-var Toast2 = forwardRef2(Component);
+var Toast2 = Component;
 
 // src/components/Tooltip/styles.ts
 import * as Tooltip from "@radix-ui/react-tooltip";

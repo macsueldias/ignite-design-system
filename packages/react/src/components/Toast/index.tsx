@@ -1,4 +1,4 @@
-import React, { useRef, forwardRef, useState } from 'react'
+import React, { useRef, useState } from 'react'
 import {
   ToastAction,
   ToastDescription,
@@ -54,4 +54,4 @@ const Component = ({
 
 Component.displayName = 'Toast'
 
-export const Toast = forwardRef(Component)
+export const Toast = Component

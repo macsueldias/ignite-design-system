@@ -687,7 +687,7 @@ var Component = ({
   ] });
 };
 Component.displayName = "Toast";
-var Toast2 = (0, import_react3.forwardRef)(Component);
+var Toast2 = Component;
 
 // src/components/Tooltip/styles.ts
 var Tooltip = __toESM(require("@radix-ui/react-tooltip"));
