@@ -1,0 +1,2 @@
+import{A as t}from"./index-425827f7.js";import"./index-70438dc3.js";import"./iframe-2bcd5e7c.js";import"./index-03997155.js";import"./jsx-runtime-b4655ab2.js";const c={title:"Data display/Avatar",component:t,args:{src:"https://github.com/macsueldias.png",alt:"Macsuel Dias"},argTypes:{src:{control:{type:"text"}}}},p={},e={args:{src:void 0}},m=["Primary","WithFallback"];export{p as Primary,e as WithFallback,m as __namedExportsOrder,c as default};
+//# sourceMappingURL=Avatar.stories-2360f671.js.map

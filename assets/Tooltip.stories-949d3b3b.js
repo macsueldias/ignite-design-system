@@ -1,0 +1,2 @@
+import{e as o}from"./index-425827f7.js";import"./index-70438dc3.js";import"./iframe-2bcd5e7c.js";import"./index-03997155.js";import"./jsx-runtime-b4655ab2.js";const p={title:"Form/Tooltip",component:o,args:{text:"Macsuel",children:"Tooltip"},argTypes:{children:{control:{type:null}}}},s={args:{children:"Tooltip",title:"Macsuel"}},a=["Primary"];export{s as Primary,a as __namedExportsOrder,p as default};
+//# sourceMappingURL=Tooltip.stories-949d3b3b.js.map
