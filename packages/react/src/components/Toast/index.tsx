@@ -17,7 +17,7 @@ export interface ToastProps {
   children: React.ReactNode
 }
 
-const Component = ({
+export const Component = ({
   title,
   description,
   duration,
@@ -53,5 +53,3 @@ const Component = ({
 }
 
 Component.displayName = 'Toast'
-
-export const Toast = Component
