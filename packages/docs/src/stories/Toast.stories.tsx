@@ -5,6 +5,11 @@ export default {
   title: 'Form/Toast',
   component: Toast,
   argTypes: {
+    children: {
+      control: {
+        type: null,
+      },
+    },
     duration: {
       type: 'number',
       default: 6000,
