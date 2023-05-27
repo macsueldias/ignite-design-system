@@ -37,9 +37,9 @@ export const Toast = ({
 
   return (
     <ToastProvider duration={duration} swipeDirection={position}>
-      <button style={{ all: 'unset', cursor: 'pointer' }} onClick={handleClick}>
+      <span style={{ all: 'unset', cursor: 'pointer' }} onClick={handleClick}>
         {children}
-      </button>
+      </span>
       <ToastRoot open={open} onOpenChange={setOpen}>
         <ToastTitle>{title}</ToastTitle>
         <ToastDescription>{description}</ToastDescription>

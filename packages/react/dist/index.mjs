@@ -626,7 +626,7 @@ var Toast2 = ({
     }, 100);
   };
   return /* @__PURE__ */ jsxs4(ToastProvider, { duration, swipeDirection: position, children: [
-    /* @__PURE__ */ jsx5("button", { style: { all: "unset", cursor: "pointer" }, onClick: handleClick, children }),
+    /* @__PURE__ */ jsx5("span", { style: { all: "unset", cursor: "pointer" }, onClick: handleClick, children }),
     /* @__PURE__ */ jsxs4(ToastRoot, { open, onOpenChange: setOpen, children: [
       /* @__PURE__ */ jsx5(ToastTitle, { children: title }),
       /* @__PURE__ */ jsx5(ToastDescription, { children: description }),

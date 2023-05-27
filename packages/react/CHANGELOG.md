@@ -1,5 +1,11 @@
 # @i9-design-ui/react
 
+## 3.0.1
+
+### Patch Changes
+
+- change children toast provider for span
+
 ## 3.0.0
 
 ### Major Changes

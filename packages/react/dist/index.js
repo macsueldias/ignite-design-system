@@ -677,7 +677,7 @@ var Toast2 = ({
     }, 100);
   };
   return /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)(ToastProvider, { duration, swipeDirection: position, children: [
-    /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("button", { style: { all: "unset", cursor: "pointer" }, onClick: handleClick, children }),
+    /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("span", { style: { all: "unset", cursor: "pointer" }, onClick: handleClick, children }),
     /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)(ToastRoot, { open, onOpenChange: setOpen, children: [
       /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(ToastTitle, { children: title }),
       /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(ToastDescription, { children: description }),
