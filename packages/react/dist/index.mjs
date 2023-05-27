@@ -525,12 +525,7 @@ function MultiStep({ size, currentStep = 1 }) {
 MultiStep.displayName = "MultiStep";
 
 // src/components/Toast/index.tsx
-import {
-  useRef,
-  forwardRef as forwardRef2,
-  useImperativeHandle,
-  useState
-} from "react";
+import { useRef, forwardRef as forwardRef2, useState } from "react";
 
 // src/components/Toast/styles.ts
 import * as Toast from "@radix-ui/react-toast";
@@ -615,7 +610,13 @@ var ToastViewport = styled(Toast.Viewport, {
 // src/components/Toast/index.tsx
 import { X } from "phosphor-react";
 import { jsx as jsx5, jsxs as jsxs4 } from "react/jsx-runtime";
-var Component = ({ title, description, duration, position, children }, ref) => {
+var Component = ({
+  title,
+  description,
+  duration,
+  position,
+  children
+}) => {
   const [open, setOpen] = useState(false);
   const timerRef = useRef(0);
   const handleClick = () => {
@@ -624,9 +625,8 @@ var Component = ({ title, description, duration, position, children }, ref) => {
       setOpen(true);
     }, 100);
   };
-  useImperativeHandle(ref, () => ({ open: handleClick }), []);
   return /* @__PURE__ */ jsxs4(ToastProvider, { duration, swipeDirection: position, children: [
-    children,
+    /* @__PURE__ */ jsx5("button", { style: { all: "unset", cursor: "pointer" }, onClick: handleClick, children }),
     /* @__PURE__ */ jsxs4(ToastRoot, { open, onOpenChange: setOpen, children: [
       /* @__PURE__ */ jsx5(ToastTitle, { children: title }),
       /* @__PURE__ */ jsx5(ToastDescription, { children: description }),

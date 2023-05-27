@@ -1,10 +1,4 @@
-import React, {
-  useRef,
-  ForwardRefRenderFunction,
-  forwardRef,
-  useImperativeHandle,
-  useState,
-} from 'react'
+import React, { useRef, forwardRef, useState } from 'react'
 import {
   ToastAction,
   ToastDescription,
@@ -23,14 +17,13 @@ export interface ToastProps {
   children: React.ReactNode
 }
 
-export interface ToastRef {
-  open: () => void
-}
-
-const Component: ForwardRefRenderFunction<ToastRef, ToastProps> = (
-  { title, description, duration, position, children }: ToastProps,
-  ref: any,
-) => {
+const Component = ({
+  title,
+  description,
+  duration,
+  position,
+  children,
+}: ToastProps) => {
   const [open, setOpen] = useState(false)
   const timerRef = useRef(0)
 
@@ -42,11 +35,11 @@ const Component: ForwardRefRenderFunction<ToastRef, ToastProps> = (
     }, 100)
   }
 
-  useImperativeHandle(ref, () => ({ open: handleClick }), [])
-
   return (
     <ToastProvider duration={duration} swipeDirection={position}>
-      {children}
+      <button style={{ all: 'unset', cursor: 'pointer' }} onClick={handleClick}>
+        {children}
+      </button>
       <ToastRoot open={open} onOpenChange={setOpen}>
         <ToastTitle>{title}</ToastTitle>
         <ToastDescription>{description}</ToastDescription>
